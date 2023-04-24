@@ -2,28 +2,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
    }
 
 body > header {
     background-color: chocolate;
     padding: 16px 0;
-    color: #f5f6fa;
+    color: white;
 }
-
 
    header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
    }
 
-header li {
+header li {    
     display: inline;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
     }
 
 header li a {
     color: #f5f6fa;
-
+    text-decoration: none;
     }
 
 .container {
@@ -37,11 +41,12 @@ header li a {
 }
 
 .articles article img{
-    height: 300px;
+    /*height: 300px; */
+    width: 100%;
 }
 
-.articles article img{
-    width: 300px;
+.articles article {
+    width: 30%;
 }
 
 section {
@@ -60,7 +65,43 @@ section h2,
 
 .articles article a{
     background-color: chocolate;
-    color: #fff;
+    color: white;
     padding: 8px;
     display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p
+.articles article a {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#series {
+    background-color: rgb(241, 205, 151, 0.3);
+}
+
+#series .articles article a{
+    background-color: rgb(241, 205, 151, 0.8);
+}
+
+#musica {
+    background-color: rgba(211, 146, 72, 0.3)
+}
+
+#musica .articles article a{
+    background-color: rgba(211, 146, 72, 0.8);
 }
